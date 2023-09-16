@@ -123,6 +123,11 @@ form
     font-size: 18px;
 }
 
+#apiKey:focus
+{
+    outline: none;
+}
+
 .search-bar
 {
     display: flex;
