@@ -36,8 +36,9 @@ function addDataToUI(data)
     console.log(data);
     let count = 1;
     data.forEach((element) => {
-        let card = document.createElement("div");
+        let card = document.createElement("a");
         card.className = "card";
+        card.href = `https://www.imdb.com/title/${element.imdbID}/`
 
         card.innerHTML = `
         <div class="poster-img">
