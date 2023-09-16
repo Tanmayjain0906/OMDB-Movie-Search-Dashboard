@@ -18,7 +18,7 @@ body {
     text-align: center;
     font-size: 7rem;
     font-weight: 900;
-    -webkit-text-stroke: 0.2px #0296E5;
+    -webkit-text-stroke: 0.7px #0296E5;
     color:transparent;
     margin-top: 20px;
     
@@ -194,7 +194,7 @@ form
 .lower h1
 {
     font-weight: 900;
-    -webkit-text-stroke: 0.2px #0296E5;
+    -webkit-text-stroke: 0.7px #0296E5;
     color:transparent;
     font-size: 10rem;
     position: relative;
