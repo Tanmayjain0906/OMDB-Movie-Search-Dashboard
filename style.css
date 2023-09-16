@@ -208,3 +208,73 @@ form
 {
     transform: scale(1.05);
 }
+
+@media (max-width:2045px) {
+    .card-container
+    {
+        grid-template-columns: repeat(4,1fr);
+    }
+}
+
+@media (max-width:1655px) {
+    .card-container
+    {
+        grid-template-columns: repeat(3,1fr);
+    }
+}
+
+@media (max-width:1270px) {
+    .card-container
+    {
+        grid-template-columns: repeat(2,1fr);
+    }
+}
+
+@media (max-width:925px) {
+    .card-container
+    {
+        grid-template-columns: repeat(2,1fr);
+    }
+
+    .title
+    {
+        font-size: 5rem;
+    }
+}
+
+@media (max-width:865px) {
+    .card-container
+    {
+        grid-template-columns: repeat(1,1fr);
+    }
+
+    .title
+    {
+        font-size: 5rem;
+    }
+}
+
+
+@media (max-width:670px) {
+    .card-container
+    {
+        grid-template-columns: repeat(1,1fr);
+    }
+
+    .title
+    {
+        font-size: 4rem;
+    }
+}
+
+@media (max-width:520px) {
+    .card-container
+    {
+        grid-template-columns: repeat(1,1fr);
+    }
+
+    .title
+    {
+        font-size: 2.5rem;
+    }
+}
