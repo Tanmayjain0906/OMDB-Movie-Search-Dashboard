@@ -25,8 +25,8 @@ form.addEventListener("submit", (e) => {
 
     e.preventDefault();
     loader.classList.remove("hide");
-    const apiSearchBar = document.getElementById("apiKey").value;
-    const searchBar = document.getElementById("search").value;
+    const apiSearchBar = document.getElementById("apiKey").value.trim();
+    const searchBar = document.getElementById("search").value.trim();
 
     apiKey = apiSearchBar;
 
