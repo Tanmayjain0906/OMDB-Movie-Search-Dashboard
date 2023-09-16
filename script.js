@@ -44,7 +44,7 @@ function addDataToUI(data) {
 
         card.innerHTML = `
         <div class="poster-img">
-        <img src="${element.Poster}" alt="Something Went Wrong">
+        <img src="${element.Poster === 'N/A'? `N_A.jpg` : element.Poster}" alt="Something Went Wrong">
         </div>
 
         <div class="lower">
