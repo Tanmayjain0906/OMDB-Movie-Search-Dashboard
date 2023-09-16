@@ -1,7 +1,7 @@
 
 let baseUrl = "https://www.omdbapi.com/";
 let apiKey;
-
+let loader = document.getElementsByClassName("loader")[0];
 
 const form = document.getElementsByTagName("form")[0];
 const container = document.getElementsByClassName("card-container")[0];
@@ -11,8 +11,9 @@ async function fetchData(search) {
 
     let response = await fetch(url);
     let data = await response.json();
-
+    loader.classList.remove("hide");
     if (data.Response == "False") {
+        loader.classList.add("hide");
         alert(data.Error);
     }
     else {
@@ -23,6 +24,7 @@ async function fetchData(search) {
 form.addEventListener("submit", (e) => {
 
     e.preventDefault();
+    loader.classList.remove("hide");
     const apiSearchBar = document.getElementById("apiKey").value;
     const searchBar = document.getElementById("search").value;
 
@@ -53,5 +55,6 @@ function addDataToUI(data) {
         count++;
 
         container.appendChild(card);
+        loader.classList.add("hide");
     })
 }

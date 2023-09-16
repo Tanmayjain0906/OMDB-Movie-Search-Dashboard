@@ -31,6 +31,57 @@ body {
     margin-right: 10px;
 }
 
+.loader
+{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top: 15vw;
+    bottom: auto;
+    color: white;
+}
+.loader span
+{
+    font-size: 20px;
+}
+
+.ring
+{
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    border-top: 0.5px solid #e65c00;
+    animation:load 0.8s linear infinite;
+}
+
+@keyframes load {
+    0%
+    {
+        transform: rotate(0deg); 
+        
+    }
+
+    50%
+    {
+        transform: rotate(180deg);
+        border-top: 0.5px solid #18b201;
+    }
+    100%
+    {
+        transform: rotate(360deg); 
+        border-top: 0.5px solid #0456c8;
+    }
+}
+
+
+.hide
+{
+    display: none;
+}
+
 .details
 {
     margin-top: 20px;
