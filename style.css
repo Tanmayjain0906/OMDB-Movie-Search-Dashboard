@@ -102,7 +102,7 @@ form
 {
     display: grid;
     grid-template-columns: repeat(5,1fr);
-    gap: 30px;
+    gap: 60px;
 }
 
 .card
@@ -112,8 +112,8 @@ form
     gap: 12px;
     transition: all 0.5s;
     text-decoration: none;
-    
     width:340px;
+    text-align: center;
 }
 
 .poster-img
@@ -125,13 +125,14 @@ form
 {
     height: 100%;
     border-radius: 10px;
-    
+    width: 100%;
 }
 
 .lower
 {
     display: flex;
     justify-content: space-between;
+    text-align: center;
 }
 
 .lower h1
@@ -139,10 +140,11 @@ form
     font-weight: 900;
     -webkit-text-stroke: 0.2px #0296E5;
     color:transparent;
-    font-size: 15rem;
+    font-size: 10rem;
     position: relative;
     z-index: 10;
-    bottom: 150px;
+    bottom: 170px;
+    right: 50px;
     
 }
 
