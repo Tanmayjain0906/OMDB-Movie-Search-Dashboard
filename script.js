@@ -31,9 +31,9 @@ form.addEventListener("submit", (e) => {
     fetchData(searchBar);
 })
 
-function addDataToUI(data)
-{
-    console.log(data);
+function addDataToUI(data) {
+    container.innerHTML = "";
+
     let count = 1;
     data.forEach((element) => {
         let card = document.createElement("a");
